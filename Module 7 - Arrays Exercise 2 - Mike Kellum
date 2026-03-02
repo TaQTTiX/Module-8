@@ -1,0 +1,44 @@
+START
+
+Declare COFFEE = 2.00
+Declare WHIPPED_CREAM = 0.89
+Declare CHOCOLATE_SAUCE =  0.59
+Declare CINNAMON = 0.25
+Declare IRISH_WHISKEY = 1.75
+Declare AMARETTO = 1.50
+
+Declare totalPrice
+Declare addOn
+Set totalPrice = coffeePrice
+
+DISPLAY "Enter add-on (Or DONE to finish)
+INPUT addOn
+
+  While addOn not eaual to done 
+
+    If addOn = WHIPPED_CREAM 
+    add WHIPPED_CREAM to totalPrice
+    Display 0.89
+  
+    ELSE if addOn = CHOCOLATE_SAUCE 
+    add CHOCOLATE_SAUCE to toalPrice
+    Display 0.59
+  
+    ELSE if addOn = CINNAMON 
+    add CINNAMON to totalPrice
+    Display 0.25
+  
+    ELSE if addOn = IRISH_WHISKEY
+    add IRISH_WHISKEY to totalPrice
+    Display 1.75
+  
+    ELSE if addOn = AMARETTO 
+    add AMARETTO to totalPrice
+    Display 1.50
+
+    END If
+  END While
+
+Display "Total Price"
+
+END
