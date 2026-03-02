@@ -1,0 +1,28 @@
+Start
+
+Declare array 20
+Declare counter = 0
+Declare inputValue
+Declare SENTINEL = -1
+
+INPUT "Enter a number (-1 to stop):"
+INPUT inputValue
+
+While inputValue ≠ SENTINEL AND counter < 20
+
+    Store inputValue in numbers[counter]
+    Add 1 to counter
+
+    Input "Enter a number (-1 to stop):"
+    Input inputValue
+
+End While
+
+Set index = counter - 1
+
+While index >= 0
+    Display numbers
+    Subtract 1 from number
+End While
+
+End
