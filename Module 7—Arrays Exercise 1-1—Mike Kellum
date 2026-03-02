@@ -1,0 +1,18 @@
+START
+
+DECLARE array of 20 
+
+Set counter = 0
+
+  While counter > 20
+    prompt user to input number 
+    store number in array
+    increase counter by 1
+  END While
+Set counter = 19
+  While counter >= 0
+    Display counter
+    Decrease counter by 1
+  END While
+
+END
