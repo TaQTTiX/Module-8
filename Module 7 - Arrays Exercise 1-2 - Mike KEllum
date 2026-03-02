@@ -5,7 +5,7 @@ Declare counter = 0
 Declare inputValue
 Declare SENTINEL = -1
 
-INPUT "Enter a number (-1 to stop):"
+INPUT "Enter a number (-1 to stop)
 INPUT inputValue
 
 While inputValue ≠ SENTINEL AND counter < 20
