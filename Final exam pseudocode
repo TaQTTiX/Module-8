@@ -1,0 +1,51 @@
+start
+    Declarations
+        num SIZE = 10
+        num MAX = 6
+        string name
+        num scores[SIZE]
+        num x
+        num y
+        num temp
+        num total
+        num COMPS = SIZE - 1
+        fillArray()
+        sortArray()
+        displayTotal()
+stop
+module fillArray()
+    output "Enter student name"
+    input name
+
+    for x = 0 to SIZE - 1
+        output "Enter score "x + 1
+        input scores[x]
+    endfor
+return
+
+module sortArray()
+  for x = 0 to COMPS - 1
+     for y = 0 to COMPS - x - 1
+        if scores[y] < scores[y + 1] then
+           swap(scores[y], scores[y + 1]
+         endif
+    endfor
+  endfor
+return
+
+module swap(a, b)
+    temp = a
+    a = b
+    b = temp
+return
+
+module displayTotal()
+    
+    for x = 0 to MAX - 1
+        total = total + scores[x]
+    endfor
+
+    output "Student Name: " name
+    output "Total of Top Six Scores: " total
+return
+STOP
