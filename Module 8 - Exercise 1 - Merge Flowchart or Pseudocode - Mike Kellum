@@ -1,0 +1,33 @@
+START 
+
+Declarations 
+  input groupA
+  input groupB
+  output mergedGroup
+
+read recordA from groupA
+read recordB from groupB
+while NOT endOfFile (groupA) AND NOT endOfFile (groupB)
+
+  if recordA.CustNum < recordB.CustNum then
+    write recordA to mergedFile
+    read recordA from groupA
+  else
+    write recordB to mergedFile
+    read recordB from groupB
+  endif
+
+endwhile
+
+copy remianing files fom groupA
+  while NOT endOfFile (groupA) dp
+    write recordA to mergedFile
+  endwhile
+
+copy remaining files from groupB
+  while NOt endOfFile (groupB) do
+    write recordB to mergedFile
+  endwhile
+
+STOP
+
